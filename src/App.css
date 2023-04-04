@@ -2,37 +2,62 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-bener {
+  height: 300px;
+  background-size: cover;
+  background-image: url(/public/mainbener.jpg);
+  background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.itemlist {
   display: flex;
-  flex-direction: column;
+  list-style: none;
+  width: 100%;
+  height: 300px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.itemlist li {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.itemlist li img {
+  width: 100%;
+}
+
+.item-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-detail container {
+  display: flex;
+}
+
+.item-detail .item-picture {
+  flex: 1;
+}
+.item-detail .item-picture img {
+  width: 100%;
+}
+
+.item-detail .item-info {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  flex: 1;
+}
+
+.item-detail .item-info .options {
+  display: flex;
+  flex-direction: column;
 }
